@@ -1,7 +1,6 @@
 from tkinter import*
 from tkinter import ttk, messagebox, filedialog
 
-window = None
 tab1 = None
 tab2 = None
 tab3 = None
@@ -148,9 +147,8 @@ def tekst():
             tx.delete(1.0, END)
             tx.insert(END, content)
 
-if __name__ == "__main__":
-    window = Tk()
-    window.title('Морозова Яна Евгеньевна')
-    window.geometry('720x400')
-    prog()
-    window.mainloop()
+window = Tk()
+window.title('Морозова Яна Евгеньевна')
+window.geometry('720x400')
+prog()
+window.mainloop()
