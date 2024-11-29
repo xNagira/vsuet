@@ -10,7 +10,7 @@ k=int(input('(чему будут эл. кратны?) k= '))
 c=0
 for i in range(len(matr)):
     for j in range(len(matr[i])):
-        if matr[i][j] % k == 0: #matr[i][j] элемент пересечения i-строки и j-столбца
+        if matr[i][j] % k == 0:
             c += 1
             if matr[i][j] > maxx:
                 maxx = matr[i][j]
@@ -28,6 +28,6 @@ fw.write('\n')
 fw.write(str('Максимально '+ str(maxx)))
 fw.close()
 
-print(*matr, sep='\n') #убираем скобки и ставим разделитель
+print(*matr, sep='\n')
 print('Найдено', c)
 print('Максимально', maxx)
