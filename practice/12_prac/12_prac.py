@@ -18,9 +18,9 @@ def nm_rep():
     if response.status_code == 200:
         repdata = response.json()
         datsave = {
-            'company': None,
+            'company': repdata.get('company'),
             'created_at': repdata.get('created_at'),
-            'email': None,
+            'email': repdata.get('email'),
             'id': repdata.get('id'),
             'name': repdata.get('name'),
             'url': repdata.get('html_url')
